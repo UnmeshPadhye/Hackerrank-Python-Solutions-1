@@ -8,11 +8,14 @@ import sys
 
 # Complete the kangaroo function below.
 def kangaroo(x1, v1, x2, v2):
+    
     for n in range(10000):
-        if((x1+v1)==(x2+v2)):
+        t1 = x1 + v1
+        t2 = x2 + v2
+   
+        if(t1 == t2):
             return "YES"
-        x1+=v1
-        x2+=v2
+        
     return "NO"
 
 if __name__ == '__main__':
